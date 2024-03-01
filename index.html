@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Biscoito da Sorte</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="screen1 hide">
+        <h1>Qual é sua sorte de hoje?</h1>
+        <p>Abra o biscoito e descubra!</p>
+        <img
+          onclick="handleClick"
+          class="cookie"
+          src="./assets/fortune-cookie.svg"
+          alt="Imagem de um biscoito da sorte"
+        />
+      </div>
+
+      <div class="screen2">
+        <h1>Aqui está sua sorte de hoje.</h1>
+        <img
+          class="phrase1 hide"
+          src="./assets/sorte.png"
+          alt="frase da sorte"
+        />
+        <img
+          class="phrase2 hide"
+          src="./assets/sorte.png"
+          alt="frase da sorte"
+        />
+        <img
+          class="phrase3 hide"
+          src="./assets/sorte.png"
+          alt="frase da sorte"
+        />
+        <img
+          class="phrase4 hide"
+          src="./assets/sorte.png"
+          alt="frase da sorte"
+        />
+        <img
+          class="phrase5 hide"
+          src="./assets/sorte.png"
+          alt="frase da sorte"
+        />
+        <img
+          src="./assets/opened-cookie.svg"
+          alt="imagem de um biscoito da sorte aberto"
+        />
+        <button>Abrir outro biscoito</button>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>

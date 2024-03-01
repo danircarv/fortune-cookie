@@ -1,0 +1,120 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(
+    100deg,
+    rgba(25, 3, 97, 1) 0%,
+    rgba(187, 0, 255, 1) 100%
+  );
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  background-color: #ffffff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  width: min(42.8rem, 90%);
+}
+
+/*screen 1*/
+.screen1 {
+  padding: 4.8rem 6.4rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+  color: #34355b;
+}
+
+p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #34355b;
+}
+
+.cookie:hover {
+  cursor: grab;
+  animation: tremer 0.25s infinite linear;
+}
+
+@keyframes tremer {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 0;
+  }
+  75% {
+    margin-left: -5px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+/*screen 2*/
+.screen2 {
+  padding: 4.8rem 6.4rem;
+  text-align: center;
+}
+
+.phrase1,
+.phrase2,
+.phrase3,
+.phrase4,
+.phrase5 {
+  animation: crescer-subir 1s ease-in-out 0.5s;
+  transform: translateY(50px);
+}
+@keyframes crescer-subir {
+  0% {
+    top: 0;
+    width: 50px;
+    height: 50px;
+  }
+  100% {
+    top: 100px; /* Mudança aqui */
+    width: 100px;
+    height: 100px;
+  }
+}
+
+button {
+  border: 0;
+  width: 17rem;
+  height: 5rem;
+  background-color: #ff9500;
+  color: #ffffff;
+  border-radius: 5px;
+
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d27b00;
+}
