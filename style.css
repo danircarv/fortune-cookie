@@ -50,7 +50,7 @@ p {
   color: #34355b;
 }
 
-.cookie:hover {
+#cookie:hover {
   cursor: grab;
   animation: tremer 0.25s infinite linear;
 }
@@ -79,24 +79,23 @@ p {
   text-align: center;
 }
 
-.phrase1,
-.phrase2,
-.phrase3,
-.phrase4,
-.phrase5 {
-  animation: crescer-subir 1s ease-in-out 0.5s;
+.phrase {
+  opacity: 0;
+
+  animation: crescer-subir 1s ease-in-out 0.5s forwards;
   transform: translateY(50px);
 }
 @keyframes crescer-subir {
   0% {
     top: 0;
-    width: 50px;
-    height: 50px;
+    width: 0px;
+    height: 0px;
   }
   100% {
+    opacity: 1;
     top: 100px; /* Mudança aqui */
-    width: 100px;
-    height: 100px;
+    width: 29.3rem;
+    height: 10.7rem;
   }
 }
 
